@@ -67,6 +67,8 @@ public class Form1 extends java.awt.Dialog {
     @Override
     public void paint(Graphics g) {
         Rectangle rcPaint = g.getClipBounds();
+        Graphics2D g2d = (Graphics2D)g;
+        g2d.setStroke(new BasicStroke(5));
         g.setColor(Color.BLACK);
         g.clearRect(0, 0, rcPaint.width, rcPaint.height);
         g.setColor(Color.BLACK);
